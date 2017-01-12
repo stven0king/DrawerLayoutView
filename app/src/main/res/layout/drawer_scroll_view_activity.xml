@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tzx.drawerlayoutview.view.DrawerScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/menu_view"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/menu_top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/holo_blue_light">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:textSize="32dp"
+                android:textColor="@android:color/black"
+                android:text="QQName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:textSize="32dp"
+                android:textColor="@android:color/black"
+                android:text="今天天气很好"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/nemu_content"
+            android:paddingLeft="30dp"
+            android:layout_below="@id/menu_top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="150dp"
+                      android:text="了解会员特权"
+                      android:gravity="center"
+                      android:layout_marginTop="30dp"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+            <TextView android:layout_width="150dp"
+                      android:text="QQ钱包"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+            <TextView android:layout_width="150dp"
+                      android:text="个性装扮"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+            <TextView android:layout_width="150dp"
+                      android:text="我的收藏"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+            <TextView android:layout_width="150dp"
+                      android:text="我的相册"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+            <TextView android:layout_width="150dp"
+                      android:text="我的文件"
+                      android:layout_marginTop="30dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent"
+                  android:background="#eee"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/set"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mask_view"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.tzx.drawerlayoutview.view.DrawerScrollView>
