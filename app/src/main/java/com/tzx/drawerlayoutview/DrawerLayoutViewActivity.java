@@ -35,7 +35,7 @@ public class DrawerLayoutViewActivity extends FragmentActivity {
         actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         //actionBar.setDisplayShowHomeEnabled(false);
-        actionBar.setHomeButtonEnabled(true);
+        //actionBar.setHomeButtonEnabled(true);
         //actionBar.setHomeAsUpIndicator(R.drawable.back);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
         mDrawerTitle = mTitle = getTitle();
@@ -81,11 +81,12 @@ public class DrawerLayoutViewActivity extends FragmentActivity {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
             case android.R.id.home:
-                if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                    drawerLayout.closeDrawer(GravityCompat.START);
-                } else {
-                    drawerLayout.openDrawer(GravityCompat.START);
-                }
+                //if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                //    drawerLayout.closeDrawer(GravityCompat.START);
+                //} else {
+                //    drawerLayout.openDrawer(GravityCompat.START);
+                //}
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);

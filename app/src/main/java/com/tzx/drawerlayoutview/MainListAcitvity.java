@@ -17,9 +17,9 @@ import android.widget.ListView;
 public class MainListAcitvity extends Activity{
     private ListView listView;
     private String[] mPlanetTitles = {
-            "DrawerLayoutView",
-            "DrawerView",
-            "DrawerScrollView"};
+            "原生抽屉滑动",
+            "旧版QQ列表滑动",
+            "新版QQ列表滑动"};
 
     private String[] classNames = {
             "com.tzx.drawerlayoutview.DrawerLayoutViewActivity",
